@@ -1,0 +1,86 @@
+load res/Images/mix.ppm p1
+
+save res/Images/mix.png p1
+
+save res/Images/mix.jpg p1
+
+save res/Images/mix.jpeg p1
+
+save res/Images/mix.bmp p1
+
+red-component p1 p2
+
+green-component p1 p3
+
+blue-component p1 p4
+
+luma-component p1 p5
+
+value-component p1 p6
+
+intensity-component p1 p7
+
+horizontal-flip p1 p8
+
+vertical-flip p1 p9
+
+brighten 5 p1 p10
+
+darken 5 p1 p11
+
+sepia p1 p12
+
+blur p1 p13
+
+greyscale p1 p14
+
+sharpen p1 p15
+
+save res/Images/sharpenedMix.bmp p15
+
+save res/Images/sharpenedMix.jpeg p15
+
+save res/Images/sharpenedMix.png p15
+
+save res/Images/sharpenedMix.ppm p15
+
+save res/Images/red-mix.png p2
+
+save res/Images/green-mix.png p3
+
+save res/Images/blue-mix.png p4
+
+save res/Images/luma-mix.png p5
+
+save res/Images/value-mix.png p6
+
+save res/Images/intensity-mix.png p7
+
+save res/Images/horflip-mix.png p8
+
+save res/Images/verflip-mix.png p9
+
+save res/Images/bri-mix.png p10
+
+save res/Images/dar-mix.png p11
+
+save res/Images/sepia-mix.png p12
+
+save res/Images/blur-mix.png p13
+
+save res/Images/greyscale-mix.png p14
+
+load res/Images/mix.png p16
+
+load res/Images/mix.jpeg p17
+
+load res/Images/mix.bmp p18
+
+save res/Images/mixCopy.bmp p16
+
+save res/Images/mixCopy.png p17
+
+save res/Images/mixCopy.jpeg p18
+
+
+q
