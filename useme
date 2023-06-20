@@ -1,0 +1,82 @@
+When configure this program, if the user want this program to execute commands in a .txt file, the
+user can add -file theScriptFile.txt to the arguments. When the program runs, if the program
+receives valid commands line, the program will execute all commands in the .txt file and quit. If
+the program don't receive any command lines. It will allow interactive entry of script commands
+which means that the user can type commands by themselves.
+
+This program will accept these following scripts commands:
+
+1.load image-path image-name (To load a image from the given path)
+#This command should be the first command to type before all commands below except "q". The user can
+quit this program at any time, but the program cannot execute the following commands before loading
+an Image
+
+2.save image-path image-name (To save a image to the given path)
+3.red-component image-name dest-image-name
+(To create a new red grey scaled image and give it a new name)
+4.green-component image-name dest-image-name
+(To create a new green grey scaled image and give it a new name)
+5.blue-component image-name dest-image-name
+(To create a new blue grey scaled image and give it a new name)
+6.luma-component image-name dest-image-name
+(To create a new luma grey scaled image and give it a new name)
+7.value-component image-name dest-image-name
+(To create a new value grey scaled image and give it a new name)
+8.intensity-component image-name dest-image-name
+(To create a new intensity grey scaled image and give it a new name)
+9.horizontal-flip image-name dest-image-name
+(To create a new horizontal-flip  image and give it a new name)
+10.vertical-flip image-name dest-image-name
+(To create a new vertical-flip  image and give it a new name)
+11.brighten increment image-name dest-image-name
+(To create a new brightened image with the given increment and give it a new name)
+12.darken decrement image-name dest-image-name
+(To create a new darkened image with the given decrement and give it a new name)
+13.blur image-name dest-image-name
+(To create a new blurred image and give it a new name)
+14.sharpen image-name dest-image-name
+(To create a new sharpened image and give it a new name)
+15.greyscale image-name dest-image-name
+(To create a new greyscale image and give it a new name)
+16.sepia image-name dest-image-name
+(To create a new sepia image and give it a new name)
+17.q (quit the program)
+When the commands are executed successfully, an reminder will occur in the console.
+When the commands are failed to execute, the program will prompt that execution failed.
+When the user quit this program, this program will be quited.
+
+//Update Nov.22 2022
+The image processing program now support 3 mode, -file, -text, and GUI mode.
+If the user want the program to use execute commands in a file they can use the program as
+instruction above. If the user want to use the interactive mode in this program, the user
+can type in -text when configure it. If the program receive nothing in the arguments of
+configuration, the program will open the graphical user interface.
+
+GUI:
+1. Load Button: choose a image to load in the program, and the loading image will be showed in the
+ center of the GUI. The image which pops up in the GUI is the image being worked now. And the
+ Image Histograms will be showed on the right side of the GUI.
+2. Save Button: when the user want to save an image to somewhere, first the user should type in the
+name of the image with extension in the box on the right side of the save button. And then click the
+save button to select a folder to save the image with the given name.
+3. Quit Button: quit the program
+4. Operations: The GUI supports these following operations:
+Brighten Button(must insert the increment for brightening first)
+Darken Button(must insert the decrement for darkening first)
+GreyScale Button
+Sepia Button
+Blur Button
+Sharpen Button
+Red GreyScale Button
+Green GreyScale Button
+Green GreyScale Button
+Max Value GreyScale Button
+Intensity GreyScale Button
+Luma GreyScale Button
+Horizontal Flip Button
+Vertical Flip Button
+
+When the user click these buttons, the program will do the corresponding commands to the image
+being worked. The new image will pop up in the center of the GUI and and the histograms on the
+right side will also change.
+
